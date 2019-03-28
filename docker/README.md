@@ -31,14 +31,13 @@ ELA_OC_AGENT_SECRET
 The available versions should be already pushed to the Docker Hub, but in case you want to try a change locally you can always execute the following command (run from a cloned GitHub repository) to get an image built locally on **Unix**-like operating system:
 
 ```
-source .env
-IMAGE_NAME=elastos/dittobox:${VERSION} ./hooks/build
+sh build.sh
 ```
 
 On Windows, only use the following command in the docker directory:
 
 ```
-env.bat
+build.bat
 ```
 
 ### Launch with plain `docker`
